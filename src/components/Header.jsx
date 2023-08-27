@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { IoNotificationsSharp } from 'react-icons/io5';
+import { FaBell } from 'react-icons/fa';
+import { PiMagnifyingGlassThin } from 'react-icons/pi';
+import { PiNoteThin } from 'react-icons/pi';
 import Overlay from './Overlay';
 
 const Header = () => {
   const [showOverlay, setShowOverlay] = useState(false);
+  if (showOverlay) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'unset';
+  }
 
   const toggleMobileMenu = () => {
     setShowOverlay(!showOverlay);
@@ -18,31 +25,34 @@ const Header = () => {
         </div>
         <div>
           <RxHamburgerMenu
-            className="text-3xl text-slate-500"
+            className="text-2xl text-[#333]"
             onClick={toggleMobileMenu}
           />
         </div>
-        <div className={`${showOverlay ? 'block' : 'hidden'}`}>
-          <Overlay toggleMobileMenu={toggleMobileMenu} />
-        </div>
-        <div>
+        <div class="relative">
           <input
             type="text"
-            className="rounded-2xl border border-slate-500 px-2 w-40"
+            class="rounded-2xl border border-slate-500 px-2 w-40 pr-10   focus:ring-slate-500 focus:outline-none"
+            placeholder="Search"
           />
+          <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+            <span class="text-gray-400">
+              <PiMagnifyingGlassThin />
+            </span>
+          </div>
         </div>
+      </div>
+
+      <div className={`${showOverlay ? 'block' : 'hidden'} z-10`}>
+        <Overlay toggleMobileMenu={toggleMobileMenu} />
       </div>
 
       <div className="flex items-center gap-2">
         <div>
-          <IoNotificationsSharp className="text-xl" />
+          <PiNoteThin className="text-xl text-[#333]" />
         </div>
-        <div className="w-9 h-9 rounded-full">
-          <img
-            src="/user.jpg"
-            alt="logo"
-            className="object-cover w-9 h-9 rounded-full"
-          />
+        <div>
+          <FaBell className="text-xl text-[#333]" />
         </div>
       </div>
     </div>

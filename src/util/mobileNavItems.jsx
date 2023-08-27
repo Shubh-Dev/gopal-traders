@@ -6,7 +6,7 @@ import { TiBook } from "react-icons/ti";
 import { TbNotebook } from "react-icons/tb";
 import { MdOutlineWifiFind } from "react-icons/md";
 import { PiTruckDuotone } from "react-icons/pi";
-import { CiHeart } from "react-icons/ci";
+import { FiHeart } from 'react-icons/fi';
 import { LiaFastForwardSolid } from "react-icons/lia";
 
 
@@ -52,32 +52,32 @@ const mobileNavItems = [
 const mobileNavItems2 = [
   {
     id: 7,
-    name: "Request a Catalogue",
-    path: "/request-catalogue",
+    name: 'Request a Catalogue',
+    path: '/request-catalogue',
     icon: <TbNotebook />,
   },
   {
     id: 8,
-    name: "Find Our Store",
-    path: "/contact",
+    name: 'Find Our Store',
+    path: '/contact',
     icon: <MdOutlineWifiFind />,
   },
   {
     id: 9,
-    name: "Track Your Order",
-    path: "/orders",
+    name: 'Track Your Order',
+    path: '/orders',
     icon: <PiTruckDuotone />,
   },
   {
     id: 10,
-    name: "Wish List",
-    path: "/customer",
-    icon: <CiHeart />,
+    name: 'Wish List',
+    path: '/customer',
+    icon: <FiHeart />,
   },
   {
     id: 11,
-    name: "Login / Register",
-    path: "/auth/login",
+    name: 'Login / Register',
+    path: '/auth/login',
     icon: <LiaFastForwardSolid />,
   },
 ];

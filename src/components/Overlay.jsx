@@ -5,7 +5,7 @@ import { mobileNavItems, mobileNavItems2 } from "../util/mobileNavItems";
 import MobileNavItem from "./parts/MobileNavItem";
 
 const Overlay = ({ toggleMobileMenu }) => (
-  <div className="flex top-12 left-0  bg-white border border-gray-300 rounded-r-md rounded-t-md rounded-b-md shadow-lg shadow-md-tr shadow-md-br shadow-primary fixed">
+  <div className="flex top-12 h-full left-0  bg-white border border-gray-300 rounded-r-md rounded-t-md rounded-b-md shadow-lg shadow-md-tr shadow-md-br shadow-primary fixed">
     <div>
       <div className="flex flex-col gap-4 pl-4 pr-10 py-4">
         {mobileNavItems.map((item) => (
@@ -27,7 +27,7 @@ const Overlay = ({ toggleMobileMenu }) => (
     </div>
     <div className="p-2">
       <AiOutlineClose
-        className="text-3xl text-slate-500"
+        className="text-2xl text-[#333]"
         onClick={toggleMobileMenu}
       />
     </div>

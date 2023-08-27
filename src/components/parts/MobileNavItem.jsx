@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const MobileNavItem = ({ name, icon }) => {
   return (
     <div className="flex items-center gap-1">
-      <p className="text-black">{icon}</p>
-      <p className="text-black">{name}</p>
+      <p className="text-[#333] font-bold">{icon}</p>
+      <p className="text-[#333]">{name}</p>
     </div>
   );
 };
