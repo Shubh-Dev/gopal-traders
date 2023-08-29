@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PrimaryButton = ({ buttonText }) => {
+const PrimaryButton = ({ buttonText, bgColor }) => {
+  const buttonBgColor = bgColor || 'bg-[#505d58]'
+  const buttonTextColor = bgColor ? 'text-black' : 'text-white'
   return (
     <div>
-      <button className="bg-[#505d58] text-white px-2 py-1 rounded-sm  shadow-lg">{buttonText}</button>
+      <button className={`px-2 py-2 rounded-md shadow-lg ${buttonTextColor} ${buttonBgColor}`}>{buttonText}</button>
     </div>
   );
 };

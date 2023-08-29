@@ -13,7 +13,7 @@ const HomeCTA = ({ image, description, title, buttonText }) => {
         />
       </div>
       <div>
-        <p className="text-center mt-6 text-3xl ">{title}</p>
+        <p className="text-center mt-6 text-3xl">{title}</p>
         <p className="text-center mt-4">{description}</p>
         <div className="text-center mt-4">
           <PrimaryButton buttonText={buttonText} />
