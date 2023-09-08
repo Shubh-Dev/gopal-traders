@@ -2,8 +2,37 @@ import React from 'react';
 
 const OurStory = () => {
   return (
-    <div>
-      <p>This is Our story page</p>
+    <div class="container text-center pt-16 mx-auto flex flex-col items-center">
+      <p class="text-4xl font-medium">Our Plumbing Story</p>
+      <p class="text-md font-semibold  py-4">Proudly born in Siliguri.</p>
+      <p class="max-w-3xl">
+        Gopal Traders is a Siliguri based Bathware dealer. We are committed to
+        source only the best and most competitive priced products from the most
+        trusted manufacturers. We provide a wide range of products to suit all
+        budgets and styles for bathrooms and kitchens. We have a large selection
+        of products on display in our showroom and we are constantly updating
+        our range to keep up with the latest trends and styles. We are a family
+        run business and we pride ourselves on our friendly and professional
+        service. We are always available to offer advice and guidance on all
+        aspects of your bathroom and kitchen requirements. We are also happy to
+        work with your own plumber or builder.
+      </p>
+      <div class="max-w-5xl border-b-2 border-gray-500 w-full"></div>
+      <p class="text-4xl pt-10 py-3">Our Mission</p>
+      <p class="text-md font-semibold  py-4">
+        To provide the best quality products at the most competitive prices.
+      </p>
+      <div class="max-w-5xl border-b-2 border-gray-500 w-full"></div>
+
+      <p class="text-4xl pt-10 py-3">Our Vision</p>
+      <p class="text-md font-semibold  py-4">
+        To be the best bathroom and kitchen supplier in Siliguri.
+      </p>
+
+      <div class="max-w-5xl border-b-2 border-gray-500 w-full"></div>
+
+      <p class="text-4xl pt-10 py-3">Our Values</p>
+     
     </div>
   );
 };
