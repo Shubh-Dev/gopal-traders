@@ -1,4 +1,5 @@
 import React from 'react';
+import GalleryImage from './parts/GalleryImage'
 
 const OurStory = () => {
   return (
@@ -41,9 +42,18 @@ const OurStory = () => {
         are also happy to work with your own plumber or builder.
       </p>
       <div class="max-w-5xl border-b-2 border-gray-300 w-full my-6"></div>
-      <p class="text-3xl text-[#969f95] font-semibold pb-4">Gallery</p>
-      <div class="grid grid-cols-2">
-        
+      <p class="text-3xl text-[#969f95] font-semibold pb-4">Image Gallery</p>
+      <div class="grid grid-cols-2 gap-2 mb-4">
+        <GalleryImage image="/toilet-2.jpg" />
+        <GalleryImage image="/tub1.png" />
+        <GalleryImage image="/toilet-2.jpg" />
+        <GalleryImage image="/tub1.png" />
+        <GalleryImage image="/toilet-2.jpg" />
+        <GalleryImage image="/tub1.png" />
+        <GalleryImage image="/toilet-2.jpg" />
+        <GalleryImage image="/tub1.png" />
+        <GalleryImage image="/toilet-2.jpg" />
+        <GalleryImage image="/tub1.png" />
       </div>
     </div>
   );
