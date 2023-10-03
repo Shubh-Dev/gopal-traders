@@ -31,6 +31,7 @@ const OurStory = () => {
       <p class="text-md font-semibold ">
         To be the best bathroom and kitchen supplier in Siliguri.
       </p>
+      
 
       <div class="max-w-5xl border-b-2 border-gray-300 w-full my-6"></div>
 
