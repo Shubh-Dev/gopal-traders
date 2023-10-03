@@ -10,6 +10,6 @@ const GalleryImage = ({ image }) => {
       />
     </div>
   );
-}
+};
 
 export default GalleryImage;

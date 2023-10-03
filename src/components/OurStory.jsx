@@ -1,5 +1,5 @@
 import React from 'react';
-import GalleryImage from './parts/GalleryImage'
+import GalleryImage from './parts/GalleryImage';
 
 const OurStory = () => {
   return (
