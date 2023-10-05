@@ -29,14 +29,14 @@ const Header = () => {
             onClick={toggleMobileMenu}
           />
         </div>
-        <div class="relative">
+        <div className="relative">
           <input
             type="text"
-            class="rounded-2xl border border-primary px-2  w-44 pr-10  focus:ring-slate-500 focus:outline-none"
+            className="rounded-2xl border border-primary px-2  w-44 pr-10  focus:ring-slate-500 focus:outline-none"
             placeholder="Search"
           />
-          <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
-            <span class="text-primary">
+          <div className="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+            <span className="text-primary">
               <PiMagnifyingGlassThin />
             </span>
           </div>

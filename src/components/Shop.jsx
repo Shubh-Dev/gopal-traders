@@ -2,6 +2,7 @@ import React from 'react';
 import { CiFilter } from 'react-icons/ci';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import ProductCard from './ProductCard';
+import productdata from '../util/productdata';
 
 const Shop = () => {
   return (
@@ -20,13 +21,20 @@ const Shop = () => {
           <MdKeyboardArrowDown className="text-2xl" />
         </div>
       </div>
-      <div className="grid">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      <div>
+        {productdata.map((product) => {
+          return (
+            <div key={product.id} className="grid grid-cols-1">
+              <ProductCard
+                image={product.image}
+                title={product.title}
+                size={product.size}
+                sku={product.sku}
+                price={product.price}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

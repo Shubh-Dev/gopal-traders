@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo = () => (
-  <div class="">
+  <div>
     <img src="/GT.png" alt="" />
   </div>
 );
