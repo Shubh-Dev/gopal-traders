@@ -25,7 +25,12 @@ const Overlay = ({ toggleMobileMenu }) => (
       <div className="flex flex-col gap-4 pl-4 pr-10 pb-4">
         {mobileNavItems2.map((item) => (
           <div key={item.id}>
-            <MobileNavItem name={item.name} icon={item.icon} />
+            <MobileNavItem
+              name={item.name}
+              icon={item.icon}
+              path={item.path}
+              toggleMobileMenu={toggleMobileMenu}
+            />
           </div>
         ))}
       </div>
